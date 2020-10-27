@@ -11,18 +11,18 @@
           <ion-title size="large">News</ion-title>
         </ion-toolbar>
       </ion-header>
-      
-      <ExploreContainer name="News page" />
+
+      <ExploreContainer name="News page"/>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
-export default  {
+export default {
   name: 'NewsTab',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: {ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage}
 }
 </script>
