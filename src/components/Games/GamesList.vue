@@ -2,7 +2,7 @@
   <ion-list>
     <ion-item v-for="item in items" :key="item.title">
       <ion-card>
-        <img :src="item.picture" :alt="item.title"/>
+        <img :src="item.picture" :alt="item.title" style="width:100%"/>
         <ion-card-header>
           <ion-card-title>{{ item.title }}</ion-card-title>
         </ion-card-header>
