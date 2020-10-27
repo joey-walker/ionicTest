@@ -2,19 +2,19 @@
   <ion-page>
     <ion-tabs>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
-          <ion-icon :icon="triangle" />
-          <ion-label>Tab 1</ion-label>
+        <ion-tab-button tab="store" href="/tabs/store">
+          <ion-icon :icon="storefront"/>
+          <ion-label>Store</ion-label>
         </ion-tab-button>
-          
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
-          <ion-icon :icon="ellipse" />
-          <ion-label>Tab 2</ion-label>
+
+        <ion-tab-button tab="games" href="/tabs/games">
+          <ion-icon :icon="gameController"/>
+          <ion-label>Games</ion-label>
         </ion-tab-button>
-        
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
-          <ion-icon :icon="square" />
-          <ion-label>Tab 3</ion-label>
+
+        <ion-tab-button tab="news" href="/tabs/news">
+          <ion-icon :icon="newspaper"/>
+          <ion-label>News</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -22,17 +22,17 @@
 </template>
 
 <script lang="ts">
-import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage } from '@ionic/vue';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import {IonIcon, IonLabel, IonPage, IonTabBar, IonTabButton, IonTabs} from '@ionic/vue';
+import {gameController, newspaper, storefront} from 'ionicons/icons';
 
 export default {
   name: 'Tabs',
-  components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
+  components: {IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage},
   setup() {
     return {
-      ellipse, 
-      square, 
-      triangle,
+      storefront,
+      gameController,
+      newspaper
     }
   }
 }
